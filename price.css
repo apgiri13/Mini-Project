@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    background: url('./img/mountain.jpg');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: 100%;
+}
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 2vw;
+    margin: 4vw;
+    box-sizing: border-box;
+    width: calc(100% - (8vw + 80px));
+}
+
+.selection {
+    margin-bottom: 20px;
+}
+
+.selection label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.selection select {
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.price {
+    margin-top: 20px;
+}
+
+#destinationDetails {
+    margin-top: 30px;
+    background-color: #f0f8ff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.details h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.details p {
+    font-size: 16px;
+    color: #132131;
+}
+
+.back-home {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .contact-section p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    width: 100%;
+    text-align: left;
+  }
+  
+  .form-group label {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+  }
+  
+  .submit-btn {
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #e67e22;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-form {
+      padding: 0 20px;
+    }
+  
+    .form-group input,
+    .form-group textarea {
+      font-size: 14px;
+    }
+  
+    .submit-btn {
+      font-size: 16px;
+    }
+  }

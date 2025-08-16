@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination Reach Prices</title>
+    <link rel="stylesheet" href="price.css">
+</head>
+<body>
+    <div class="container" >
+        <center><h2 >Destination Reach Prices</h2></center>
+        <!-- Destination location selection dropdown -->
+        
+
+        <form action="#" method="POST" class="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+            </div>
+            <div class="selection">
+                <label for="vehicle">Choose a Vehicle:</label>
+                <select id="vehicle" onchange="updatePrice()">
+                    <option value="auto">Auto</option>
+                    <option value="metro">Metro</option>
+                    <option value="bus">Bus</option>
+                    <option value="bike">Bike</option>
+                </select>
+            </div>
+            <div class="selection">
+                <label for="location">Choose a Destination:</label>
+                <select id="location" onchange="updatePrice()">
+                    <option value="Jaipur,Rajasthan">Jaipur,Rajasthan</option>
+                    <option value="Sundarbans,West Bengal">Sundarbans,West Bengal</option>
+                    <option value="Rishikesh,Uttarakhand">Rishikesh,Uttarakhand</option>
+                    <option value="Ooty,Tamil Nadu">Ooty Tamil Nadu</option>
+                    <option value="Kerla Backwaters,Kerala">Kerla Backwaters,Kerala</option>
+                    <option value="Varanasi,Uttar Pradesh">Varanasi,Uttar Pradesh</option>
+                    <option value="Rann of Kutch,Gujarat">Rann of Kutch,Gujarat</option>
+                    <option value="Andaman and Nicobar Islands">Andamd and Nicobar Islandsan </option>
+
+                </select>
+            </div>
+          </form>
+
+        <!-- Display the calculated price -->
+        <div class="price">
+            <h3>Price: <span id="priceValue">$10</span></h3>
+        </div>
+
+        <!-- More Details Section about the destination -->
+        <div id="destinationDetails" class="details">
+            <h3>Destination Details:</h3>
+            <p id="detailsText">Select a destination to see more details.</p>
+        </div>
+
+        <!-- Back to Home button -->
+        <div class="back-home">
+            <button onclick="window.location.href='index.html'">CANCEL</button>
+            <button onclick="alert('Successful')">SUBMIT</button>
+        </div>
+    </div>
+
+    <script src="price.js"></script>
+</body>
+</html>
